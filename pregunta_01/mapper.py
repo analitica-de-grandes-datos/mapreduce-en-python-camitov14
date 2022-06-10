@@ -3,7 +3,7 @@
 #
 import sys
 if __name__ == "__main__":
-    data=sys.stdin.readlines()
+    data=sys.stdin
     line=[x.split(",") for x in data]
     column=[x[3] for x in line]
     for word in column:
