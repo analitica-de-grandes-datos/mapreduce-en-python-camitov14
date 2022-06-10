@@ -4,7 +4,7 @@
 import sys
 if __name__ == "__main__":
     for line in sys.stdin:
-        line = [x.split("\t") for x in line]
+        line = [x.split("\n") for x in line]
         for column in line:
             column=[x.split(",") for x in column]
             for word in column[3]:
