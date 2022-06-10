@@ -3,9 +3,9 @@
 #
 import sys
 if __name__ == "__main__":
-    for line in sys.stdin:
-        line = [x.split("\n") for x in line]
+    for line in sys.stdin.readlines():
         for column in line:
             column=[x.split(",") for x in column]
             for word in column[3]:
                 sys.stdout.write("{}\t1\n".format(word))
+
